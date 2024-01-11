@@ -30,8 +30,7 @@ public class ApiUtils {
 	  }
 	//Send POST request
 	  public HttpResponse<String> sendPostRequest(String url,String jsonRequestBody){
-		  //payload = Request body string
-		  //String requestBodyString = "{\"email\": 1,\"password\": \"cityslicka\"}";
+
 		  HttpResponse<String> response =null;
 		  try {
 		  HttpRequest request = HttpRequest.newBuilder()
@@ -42,8 +41,6 @@ public class ApiUtils {
 				  .build();
 		  
 		  response =  HttpClient.newHttpClient().send(request, BodyHandlers.ofString());
-		  //actualStatusCode=response.statusCode();
-		 // String body = response.body();
 		  System.out.println("Request gui la:" + jsonRequestBody);
 		  
 		  } catch (Exception e) {
@@ -53,9 +50,4 @@ public class ApiUtils {
 		  return response;
 	  }
 	  
-	  //Create method load request body from Json file.
-	  //Copy file => convert file => String => Json
-	  //replace data theo mình muốn
-	  //chạy TC
-	  //Xoá file copy
 }

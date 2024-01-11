@@ -1,0 +1,26 @@
+{
+    "header": {
+        "reqType": "REQUEST",
+        "api": "AUTH",
+        "apiKey": "QMKLFONI1EZXLF2CKPYGPFX2480116",
+        "priority": "3",
+        "channel": "SEANET",
+        "subChannel": "SEAPORTAL",
+        "location": "10.9.12.90",
+        "context": "PC",
+        "trusted": "false",
+        "userID": "0019458248",
+        "requestAPI": "SWIB",
+        "requestNode": "01"
+    },
+    "body": {
+        "command": "GET_ENQUIRY",
+        "enquiry": {
+            "authenType": "getLogin",
+            "username": "0019458248",
+            "password": "Aa123456@",
+            "loginTime": "20240103132611",
+            "transId": "AuthenAPI-HA2289-3311"
+        }
+    }
+}
